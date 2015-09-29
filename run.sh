@@ -1,3 +1,3 @@
 #! /usr/bin/env bash
 
-make clean && make && ./test_mtbound
+mkdir -p build && cd build && cmake -DCMAKE_BUILD_TYPE=Debug .. && make && src/test_mtbound
